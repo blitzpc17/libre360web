@@ -5,49 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libre360 - @yield('title')</title>
 
-    @push('css')
+    @stack('css')
+    <link rel="stylesheet" href="{{asset('Home/css/main.css')}}">
 
-        <link rel="stylesheet" href="{{asset('Home/css/main.css')}}">
-
-    @endpush
 </head>
 <body>
 
-<header>
-        <div class="navbar">
-            <div class="logo">LIBRE <span>360°</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#">¿Qué es Libre 360°?</a></li>
-                    <li><a href="#">Ayuda</a></li>
+    <header>
+
+        <nav class="navbar">
+            <div class="nav-desktop">
+                <div class="logo">
+                    <span class="libre">LIBRE</span>
+                    <span class="tres-seis-cero">360</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#quienes-somos">Inicio</a></li>
+                    <li><a href="#ayuda">¿Quiénes somos?</a></li>
+                    <li><a href="#ayuda">Registrate</a></li>
                 </ul>
-            </nav>
-        </div>
+                <div class="hamburger" aria-label="Menú móvil">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul class="nav-links-mobile">
+                    <li><a href="#quienes-somos">Inicio</a></li>
+                    <li><a href="#ayuda">¿Quiénes somos?</a></li>
+                    <li><a href="#ayuda">Registrate</a></li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Viaja seguro, viaja <span class="highlight">Libre 360°</span></h1>
-            <p>Rápido, cómodo y seguro.</p>
-            <div class="hero-content">
-                <div class="mapa">
-                    <p>Cotiza tu viaje <strong>$80.47</strong></p>
-                </div>
-                <div class="imagen-manejo"></div>
-            </div>
-            <button class="btn-primary">Viaja</button>
-            <button class="btn-secondary">Comienza a manejar</button>
-        </section>
 
-        <section class="promo">
-            <h2>¡Acumula puntos y viaja gratis!</h2>
-        </section>
+    @yield('contenido')
 
-        <section class="info">
-            <h2>Estamos aquí, para llevarte a donde necesites</h2>
-            <p>Somos un servicio de transporte público comprometido con ofrecerte comodidad, rapidez y seguridad.</p>
-        </section>
-    </main>
+   
 
     <footer>
         <p>Términos y condiciones | Política de Privacidad</p>
@@ -60,8 +57,15 @@
 
 
 <!-- js -->
-@push('js')
-@endpush
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+@stack('js')
     
 </body>
 </html>

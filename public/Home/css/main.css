@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #d29303;
+    --text-color: #000;
+}
+
+
+@font-face {
+    font-family: 'agressive';
+    src: url('../fonts/AGRESSIVE.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'taile';
+    src: url('../fonts/taile.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'taileb';
+    src: url('../fonts/taileb.ttf') format('truetype');
+}
+
+
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'taile', sans-serif;
+    margin-top: 60px;
+    background: red;
+}
+
+
+h1 {
+    font-family: 'agressive', serif;
+}
+
+
+
+
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-family: 'agressive';
+    transform: skewX(-10deg);
+    text-transform: uppercase;
+}
+
+.libre {
+    color: white; 
+}
+
+.tres-seis-cero {
+    color: orange;  
+    font-size: 10px;
+    position: relative;
+    top: -11px;
+    margin-left: -3px;
+}
+
+
+/* Navbar */
+.navbar {
+    /*display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;  */
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Links del navbar */
+.nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover{
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;    
+    background: black;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links-mobile a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links-mobile a:hover{
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .nav-desktop {
+        justify-content: flex-start;
+    }
+}
