@@ -95,7 +95,7 @@ h1 {
 }
 
 .nav-links a:hover{
-    color: var(--primary-color);
+    color: var(#d29303);
 }
 
 .hamburger {
@@ -139,7 +139,7 @@ h1 {
 }
 
 .nav-links-mobile a:hover{
-    color: var(--primary-color);
+    color: var(#d29303);
 }
 
 @media (max-width: 768px) {
@@ -199,7 +199,7 @@ h1 {
 }
 
 .hero .highlight{
-    color: var(--primary-color);
+    color: #d29303;
 }
 
 .hero p{
@@ -233,7 +233,7 @@ h1 {
 
 /*button personalizado libre360*/
 .btn-libre360{
-    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(to bottom, #f3ea66, #d29303);
     color: black;
     font-size: 18px;
     text-align: center;
