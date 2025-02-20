@@ -1,5 +1,6 @@
 :root {
     --primary-color: #d29303;
+    --secondary-color: #f3ea66;
     --text-color: #000;
 }
 
@@ -157,3 +158,89 @@ h1 {
         justify-content: flex-start;
     }
 }
+
+
+/*  home */
+
+
+/* hero */
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    padding: 12vh;
+    background-color: white;  
+    gap:10px;  
+}
+
+.hero .row{
+    display: flex; 
+    justify-content: space-between;   
+}
+
+.hero .row .option{
+    width: 40%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero .row .option img{
+    width: 300px;
+    height: 300px;
+}
+
+.hero h2{
+    font-family: taileb;
+    font-size: 48px;
+}
+
+.hero .highlight{
+    color: var(--primary-color);
+}
+
+.hero p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero{
+        padding: 10vh 3vh;
+    }
+
+    .hero .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2{
+        font-size: 32px;
+    }
+    
+    .hero p{
+        font-size: 18px;
+        
+    }
+}
+
+
+
+/*button personalizado libre360*/
+.btn-libre360{
+    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
