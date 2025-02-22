@@ -46,13 +46,39 @@
 
    
 
+    
+
+
     <footer>
-        <p>Términos y condiciones | Política de Privacidad</p>
-        <div class="descargas">
-            <button>Google Play</button>
-            <button>App Store</button>
+        <div class="footer-content">           
+            
+            <div class="footer-section">
+                <ul>
+                    <li><a href="#inicio">Términos y condiciones</a></li>
+                    <li><a href="#servicios">Politica de privacidad</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Descarga ahora</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('Home/img/googleplay.png')}}" alt="googleplay" class="googleplay">
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="{{asset('Home/img/appstore.png')}}" alt="ios" class="ios">
+                    </a> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <span>&copy; {{date('Y')}}</span> <span class="libref">LIBRE</span><span class="f360">360</span> <span>. Todos los derechos reservados</span>
         </div>
     </footer>
+
 
 
 

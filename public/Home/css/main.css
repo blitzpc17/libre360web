@@ -20,8 +20,7 @@
     src: url('../fonts/taileb.ttf') format('truetype');
 }
 
-
-*{    
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,6 +30,7 @@ body{
     font-family: 'taile', sans-serif;
     margin-top: 60px;
     background: red;
+   
 }
 
 
@@ -95,7 +95,7 @@ h1 {
 }
 
 .nav-links a:hover{
-    color: var(#d29303);
+    color: #d29303;
 }
 
 .hamburger {
@@ -139,7 +139,7 @@ h1 {
 }
 
 .nav-links-mobile a:hover{
-    color: var(#d29303);
+    color: #d29303;
 }
 
 @media (max-width: 768px) {
@@ -231,6 +231,110 @@ h1 {
 
 
 
+/*foooter*/
+
+footer {
+    background: black;
+    color: white;
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {    
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.footer-section ul {
+    list-style: none;
+    line-height: 3;
+
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-section h3{
+    font-size: 24px; 
+       
+}
+
+.footer-section .ios {
+    width: 128px;
+    height: 40px;
+}
+
+.footer-section .googleplay {
+    width: 128px;
+    height: 50px;
+}
+
+.footer-section a:hover {
+    color: #d29303;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom span.libref{
+    font-family: 'agressive';
+    transform: skewX(-10deg);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.footer-bottom span.f360{
+    color: orange;
+    font-family: 'agressive';
+    font-size: 7px;
+    position: relative;
+    top: -6px;
+    margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom span{
+        font-size: 12px;
+    }
+
+    .footer-bottom span.f360{
+        color: orange;
+        font-size: 6px;
+        position: relative;
+        top: -4px;
+        margin-left: 2px;
+    }
+}
+
+
+
+
 /*button personalizado libre360*/
 .btn-libre360{
     background: linear-gradient(to bottom, #f3ea66, #d29303);
@@ -243,4 +347,6 @@ h1 {
     border-radius: 15px;
     cursor: pointer;
 }
+
+
 
