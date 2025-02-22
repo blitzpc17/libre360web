@@ -6,7 +6,7 @@
     <title>Libre360 - @yield('title')</title>
 
     @stack('css')
-    <link rel="stylesheet" href="{{asset('Home/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('Home/css/style.css')}}">
 
 </head>
 <body>
