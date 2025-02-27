@@ -13,12 +13,12 @@
 
                 <div class="option">
                     <img src="{{asset('Home/img/1080X1080-CHOFER.png')}}" alt="conductor">
-                    <a class="btn-libre360">Viaja</a>
+                    <a href="{{route('home.registro')}}?t=U" class="btn-libre360">Viaja</a>
                 </div>
 
                 <div class="option">
                     <img src="{{asset('Home/img/1080X1080-CHOFER.png')}}" alt="conductor">
-                    <a class="btn-libre360">Comienza a manejar</a>
+                    <a href="{{route('home.registro')}}?t=C" class="btn-libre360">Comienza a manejar</a>
                 </div>
                 
             </div>

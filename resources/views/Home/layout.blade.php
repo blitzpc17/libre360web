@@ -7,6 +7,7 @@
 
     @stack('css')
     <link rel="stylesheet" href="{{asset('Home/css/prueba1.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body>
@@ -22,7 +23,6 @@
                 <ul class="nav-links">
                     <li><a href="{{route('home')}}">Inicio</a></li>
                     <li><a href="{{route('home.somos')}}">¿Quiénes somos?</a></li>
-                    <li><a href="#ayuda">Registrate</a></li>
                 </ul>
                 <div class="hamburger" aria-label="Menú móvil">
                     <div class="line1"></div>
@@ -34,7 +34,6 @@
                 <ul class="nav-links-mobile">
                     <li><a href="{{route('home')}}">Inicio</a></li>
                     <li><a href="{{route('home.somos')}}">¿Quiénes somos?</a></li>
-                    <li><a href="#ayuda">Registrate</a></li>
                 </ul>
             </div>
         </nav>
