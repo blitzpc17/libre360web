@@ -6,7 +6,7 @@
     <title>Libre360 - @yield('title')</title>
 
     @stack('css')
-    <link rel="stylesheet" href="{{asset('Home/css/prueba.css')}}">
+    <link rel="stylesheet" href="{{asset('Home/css/prueba1.css')}}">
 
 </head>
 <body>
@@ -20,8 +20,8 @@
                     <span class="tres-seis-cero">360</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#quienes-somos">Inicio</a></li>
-                    <li><a href="#ayuda">¿Quiénes somos?</a></li>
+                    <li><a href="{{route('home')}}">Inicio</a></li>
+                    <li><a href="{{route('home.somos')}}">¿Quiénes somos?</a></li>
                     <li><a href="#ayuda">Registrate</a></li>
                 </ul>
                 <div class="hamburger" aria-label="Menú móvil">
@@ -32,8 +32,8 @@
             </div>
             <div class="mobile-menu">
                 <ul class="nav-links-mobile">
-                    <li><a href="#quienes-somos">Inicio</a></li>
-                    <li><a href="#ayuda">¿Quiénes somos?</a></li>
+                    <li><a href="{{route('home')}}">Inicio</a></li>
+                    <li><a href="{{route('home.somos')}}">¿Quiénes somos?</a></li>
                     <li><a href="#ayuda">Registrate</a></li>
                 </ul>
             </div>

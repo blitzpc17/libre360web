@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomePage\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Home.HomePage');
-});
+})->name('home');
+
+Route::get('somos', [HomeController::class, 'Somos'])->name('home.somos');
 
 
 /*ADMIN DASHBOARD */
